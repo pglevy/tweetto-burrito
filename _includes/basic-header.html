@@ -1,0 +1,35 @@
+<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<div class="usa-overlay"></div>
+<header class="usa-header usa-header--basic">
+  <div class="usa-nav-container">
+    <div class="usa-navbar">
+      <div class="usa-logo" id="basic-logo">
+        <em class="usa-logo__text"><a href="{{ site.url }}{{ site.baseurl }}/" title="Home" aria-label="Home">{{ site.title }}</a></em>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+    <nav aria-label="Primary navigation" class="usa-nav">
+      <button class="usa-nav__close"><img src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.13.0/img/usa-icons/close.svg" role="img" alt="close"></button>
+      <ul class="usa-nav__primary usa-accordion">
+        {% for item in site.data.nav %}
+        <li class="usa-nav__primary-item">
+          {% if item.subnav %}
+          <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="extended-nav-section-{{ forloop.index }}"><span>{{ item.title }}</span></button>
+          <ul id="extended-nav-section-{{ forloop.index }}" class="usa-nav__submenu">
+            {% for entry in item.subnav %}
+            <li class="usa-nav__submenu-item">
+              <a href="{{ entry.url }}" class="">{{ entry.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <a href="{{ item.url }}" class="usa-nav__link">
+            <span>{{ item.title }}</span>
+          </a>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

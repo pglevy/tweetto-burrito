@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{site.lang}}">
+
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.13.0/js/uswds-init.min.js" integrity="sha512-CERRusk3iiaHwELaoxK7Q70UHH6ifSJKSrq3Cfk/TsZooDq7sJYsRCPLdP3YMnTfr3LoeTALPlkpC6g+F6w1Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.13.0/css/uswds.min.css" integrity="sha512-xPiQTrgCMM1wa1zTNF7c0y/VRMVx2MeI6pVYWCdlv0JtKN/Utnr4rslFX0WuyYnkPh4+1U7abC0JHhsJ7AF/EA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    {% if page.header %}{% include basic-header.html %}{% endif %}
+    <main id="main-content">
+      <div class="grid-container{% if page.prose %} usa-prose padding-top-4{% endif %}">
+        {{ content }}
+      </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.13.0/js/uswds.min.js" integrity="sha512-1Niw6TYjCyuUjgapoQ7uaGTQ6IoIvnAhXK3m6/IdDE79SC3Bs3Rjr7gIfj+WPUtabJPIrIc0Mfrs0joIWviF1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+  
+</html>
