@@ -1,11 +1,7 @@
-<!--
-    Documentation: https://github.com/pglevy/rwp-toolkit/wiki/Components#text-input
--->
 <label class="usa-label {{ include.label-style }}" for="{{ include.id }}">{{ include.label }}</label>
 {% if include.hint %}<span class="{{ include.hint-style }}">{{ include.hint }}</span>{% endif %}
-<input
-  class="usa-input {{ include.input-style }}"
+<textarea
+  class="usa-textarea {{ include.textarea-style }}"
   id="{{ include.id }}"
   name="{{ include.id }}"
-  type="{{ include.type }}"
-/>
+></textarea>
