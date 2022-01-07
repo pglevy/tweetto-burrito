@@ -9,9 +9,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.13.0/js/uswds-init.min.js" integrity="sha512-CERRusk3iiaHwELaoxK7Q70UHH6ifSJKSrq3Cfk/TsZooDq7sJYsRCPLdP3YMnTfr3LoeTALPlkpC6g+F6w1Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.13.0/css/uswds.min.css" integrity="sha512-xPiQTrgCMM1wa1zTNF7c0y/VRMVx2MeI6pVYWCdlv0JtKN/Utnr4rslFX0WuyYnkPh4+1U7abC0JHhsJ7AF/EA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
   </head>
 
-  <body>
+  <body class="{{ page.body-style }}">
     {% if page.header %}{% include basic-header.html %}{% endif %}
     <main id="main-content">
       <div class="grid-container{% if page.prose %} usa-prose padding-top-4{% endif %}">
