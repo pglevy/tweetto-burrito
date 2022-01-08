@@ -46,7 +46,7 @@ Find this useful? You have options!
 {: .add-list-reset}
 
 {% include text-input.html 
-label="Tweetto Burrito Link" 
+label="Tweetto Burrito ink" 
 id="thelink" 
 type="text" %}
 
