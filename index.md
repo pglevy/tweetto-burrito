@@ -31,7 +31,7 @@ id="hashtags"
 type="text" 
 hint="Separate with commas and leave out the hashtag symbol: meat, cheese" %}
 
-<a href="#thelink" class="usa-button usa-button--big bg-primary-vivid hover:bg-secondary-vivid radius-pill" id="getlink">Generate link <i class="bi bi-link-45deg"></i></a>
+<a href="#thats-a-wrap" class="usa-button usa-button--big bg-primary-vivid hover:bg-secondary-vivid radius-pill" id="getlink">Generate link <i class="bi bi-link-45deg"></i></a>
 {% endcapture %}
 
 {% capture link %}
