@@ -1,10 +1,10 @@
 <!--
     Documentation: https://github.com/pglevy/rwp-toolkit/wiki/Components#text-input
 -->
-<label class="usa-label {{ include.label-style }}" for="{{ include.id }}">{{ include.label }}</label>
+<label class="usa-label font-sans-md text-bold margin-bottom-1 {{ include.label-style }}" for="{{ include.id }}">{{ include.label }}</label>
 {% if include.hint %}<span class="{{ include.hint-style }}">{{ include.hint }}</span>{% endif %}
 <input
-  class="usa-input {{ include.input-style }}"
+  class="usa-input radius-pill padding-3 border-05 border-primary-vivid margin-top-2 {{ include.input-style }}"
   id="{{ include.id }}"
   name="{{ include.id }}"
   type="{{ include.type }}"
