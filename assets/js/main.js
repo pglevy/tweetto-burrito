@@ -1,5 +1,6 @@
 new ClipboardJS('#clipboard');
 
+$("#link-section").hide();
 
   $("#getlink").on("click", function () {
     var baseurl = "https://twitter.com/intent/tweet?";
@@ -27,7 +28,7 @@ new ClipboardJS('#clipboard');
     );
     $('#preview').attr('href', webintent);
     $('#thelink').val(webintent);
-    $('#link').show();
+    $('#link-section').show();
     $('#editlink').on('click', function(){
       $('#getlink').text('Update link');
     });
