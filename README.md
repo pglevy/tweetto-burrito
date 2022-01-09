@@ -4,4 +4,10 @@ Generate “call-to-tweet” links for your email newsletters and websites to ma
 
 Live site: <https://pglevy.github.io/rwp-toolkit/>
 
-This project was created using the [Rapid Web Prototyping Toolkit](https://github.com/pglevy/rwp-toolkit).
+This project was created using the [Rapid Web Prototyping Toolkit](https://github.com/pglevy/rwp-toolkit) along with these awesome tools:
+
+- [U.S. Web Design System](https://designsystem.digital.gov/)
+- [clipboard.js](https://clipboardjs.com/)
+- [Bootstrap Icons](https://icons.getbootstrap.com/)
+- [Public Sans](https://fonts.google.com/specimen/Public+Sans)
+- [Twemoji](https://twemoji.twitter.com/)
