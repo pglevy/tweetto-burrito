@@ -54,7 +54,11 @@ label="Tweetto Burrito link"
 id="thelink" 
 type="text" %}
 
-<button type="button" class="usa-button usa-button--big bg-primary-vivid hover:bg-secondary-vivid radius-pill" id="clipboard" data-clipboard-target="#thelink">Copy to clipboard <i class="bi bi-clipboard"></i></button>
+{% include components/checkbox.html labels="Make it tiny" %}
+
+{% include components/alert.html heading="Oops!" text="Something went wrong. Please try again or uncheck the box to the full link instead of the tiny one." type="warning" style="display-none" %}
+
+<button type="button" class="usa-button usa-button--big bg-primary-vivid hover:bg-secondary-vivid radius-pill margin-top-2" id="clipboard" data-clipboard-target="#thelink">Copy to clipboard <i class="bi bi-clipboard"></i></button>
 
 You can also <a id="preview" href="" target="_blank">preview your link</a> or <a href="#form-section" id="editlink">make changes</a>.
 {% endcapture %}
