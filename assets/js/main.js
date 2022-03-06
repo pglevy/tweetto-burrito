@@ -44,17 +44,6 @@ $("#getlink").on("click", function () {
       "&hashtags=" +
       hashtags;
 
-  // this seems to be obselete
-  // $("#webintent").text(
-  //   baseurl +
-  //     "text=" +
-  //     encodedtext +
-  //     "&url=" +
-  //     encodedurl +
-  //     "&hashtags=" +
-  //     trimmedtags
-  // );
-
   // set the preview link to webintent
   $('#preview').attr('href', webintent);
 
@@ -69,15 +58,12 @@ $("#getlink").on("click", function () {
     $('#getlink').text('Update link');
   });
 
-  console.log(webintent);
-
   // set mydata with the webintent link in case the tiny option is checked
   mydata = '{"url":"' + webintent + '", "domain":"tiny.one"}';
 });
 
 // use the tinyURL api to shorten the webintent link if needed
 $("#make-it-tiny").on("click", function () {
-  console.log(mydata);
   if($(this).prop("checked") == true) {
     $.ajax({
       url: "https://api.tinyurl.com/create?api_token=6bNI1jA1OAshWLp3kfbrW1XXrLpm5qt8rnRjVUnTgRTKL2TNEM8hfcjmMtwU",
@@ -87,7 +73,6 @@ $("#make-it-tiny").on("click", function () {
       processData: false,
       data: mydata,
       success: function (data) {
-        console.log(data.data.tiny_url);
         $('#thelink').val(data.data.tiny_url);
       },
       error: function(){
